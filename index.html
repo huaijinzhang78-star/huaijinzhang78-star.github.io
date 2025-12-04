@@ -1,46 +1,156 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>欢迎来到我的网站</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Bolymax Ltd | UK–China Trading Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Bolymax Ltd is a UK-registered trading company based in London, supporting British and international businesses with reliable product sourcing from China."
+  />
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f6fa;
-      margin: 0;
-      padding: 0;
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    .container {
-      max-width: 800px;
-      margin: 100px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f5f5f5; color: #222; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h1 {
-      color: #2c3e50;
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
-    p {
-      color: #555;
-      line-height: 1.6;
+    nav a {
+      margin-left: 20px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    section { padding: 40px 16px; }
+    .container { max-width: 980px; margin: 0 auto; }
+
+    .hero h1 { font-size: 2rem; margin-bottom: 14px; }
+    .hero p { max-width: 700px; margin-bottom: 18px; color: #444; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: #111;
+      color: #fff;
+      font-size: 0.95rem;
+      border: 1px solid #111;
+    }
+
+    h2 { font-size: 1.25rem; margin-bottom: 10px; }
+    ul { list-style: none; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+
+    .contact {
+      background: #111;
+      color: #fff;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
+
+<header>
+  <div class="logo">BOLYMAX LTD</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
   <div class="container">
-    <h1>🎉 网站已成功上线</h1>
+    <h1>Your UK-Based Sourcing Partner in China</h1>
     <p>
-      这是我使用 <strong>GitHub Pages</strong> 创建的第一个网站。
+      Bolymax Ltd is a UK-registered trading company based in London, supporting British
+      and international businesses with reliable product sourcing from China.
     </p>
+    <a class="btn" href="mailto:Archiechen@bolymax.com">Make an Enquiry</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>Who We Are</h2>
     <p>
-      域名：<br>
-      <code>https://huaijinzhang78-star.github.io</code>
-    </p>
-    <p>
-      后续我会在这里发布正式内容。
+      A UK–China trading company based in London, acting as a local UK partner while
+      coordinating sourcing and factory management across China.
     </p>
   </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>What We Do</h2>
+    <ul>
+      <li>• Product sourcing from Chinese manufacturers</li>
+      <li>• Supplier matching and coordination</li>
+      <li>• OEM / ODM support</li>
+      <li>• Quality inspection</li>
+      <li>• Logistics and UK import clearance</li>
+    </ul>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <h2>Products We Source</h2>
+    <ul>
+      <li>• Household and daily-use products</li>
+      <li>• Promotional and gift items</li>
+      <li>• Packaging products</li>
+      <li>• Seasonal and fast-moving goods</li>
+    </ul>
+    <p style="color:#666;font-size:0.85rem;margin-top:6px;">
+      Products shown are indicative only and sourced according to individual requirements.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>
+        For sourcing enquiries or wholesale discussions, please contact us with
+        your product requirements.
+      </p>
+      <a class="btn" href="mailto:Archiechen@bolymax.com">Email: Archiechen@bolymax.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Bolymax Ltd. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
