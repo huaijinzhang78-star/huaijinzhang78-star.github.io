@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BOLYMAX LTD | UK–China Sourcing Partner in London</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="BOLYMAX LTD is a UK-registered trading company based in London, helping British and international buyers source and import products from Chinese manufacturers."
+  />
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --navy: #002b5c;
+      --navy-soft: #0d3d74;
+      --gold: #f2b53b;
+      --gold-dark: #d0911c;
+      --bg: #faf8f3;  /* 淡金米白背景 */
+      --text: #1f2933;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: radial-gradient(circle at left, rgba(242,181,59,0.35) 0, rgba(242,181,59,0.10) 40%, transparent 70%);
+    }
+    .logo-img {
+      height: 72px;
+      width: auto;
+      display: block;
+    }
+    .logo-text-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo-wordmark {
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 0.7rem;
+      opacity: 0.9;
+      margin-top: 2px;
+    }
+    nav a {
+      margin-left: 18px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    nav a:hover { opacity: 1; text-decoration: underline; }
+    .lang-switch {
+      font-size: 0.8rem;
+      margin-left: 16px;
+      padding-left: 12px;
+      border-left: 1px solid rgba(255,255,255,0.3);
+      opacity: 0.8;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(130deg, var(--navy), var(--navy-soft));
+      color: #fff;
+      padding: 52px 16px 44px;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 0 4px; }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 28px;
+      align-items: center;
+    }
+    .hero h1 { font-size: 2rem; margin-bottom: 14px; }
+    .hero p { font-size: 0.98rem; color: #e1ebff; margin-bottom: 18px; }
+    .hero-meta { font-size: 0.85rem; color: #c9daf8; margin-bottom: 16px; }
+    .hero-meta span { display: inline-block; margin-right: 12px; }
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #1a2230;
+      font-weight: 600;
+    }
+    .btn-primary:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+    .btn-secondary {
+      background: transparent;
+      border-color: #8ea5c8;
+      color: #e1ebff;
+    }
+    .btn-secondary:hover { border-color: #ffffff; }
+    .hero-note {
+      font-size: 0.82rem;
+      color: #ccdcff;
+      margin-top: 4px;
+    }
+    .hero-side {
+      background: rgba(0, 0, 0, 0.18);
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid rgba(159,183,217,0.6);
+      font-size: 0.9rem;
+    }
+    .hero-side-title { font-weight: 600; margin-bottom: 6px; }
+    .hero-side ul { list-style: none; margin-top: 4px; }
+    .hero-side li { margin-bottom: 4px; color: #e1ebff; }
+
+    section { padding: 40px 16px; }
+    .section-intro { font-size: 0.95rem; color: #4b5b70; margin-bottom: 18px; }
+
+    /* 金色标题条 */
+    .section-title {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--gold) 0%, #f7ce6a 100%);
+      color: #1a2230;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 16px 18px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
+    ul.list { list-style: none; padding-left: 0; }
+    ul.list li { margin-bottom: 6px; font-size: 0.93rem; }
+    .muted { font-size: 0.86rem; color: #6b7b92; }
+
+    /* Contact / Form */
+    #contact { padding-bottom: 46px; }
+    .contact-box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 24px;
+    }
+    .contact-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .contact-box p {
+      font-size: 0.93rem;
+      color: #3a4a60;
+      margin-bottom: 12px;
+    }
+
+    form label {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+      color: #3a4a60;
+    }
+    form input, form textarea {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #c6d2e4;
+      padding: 7px 9px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      font-family: inherit;
+      background: #fdfcf8;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px #f2b53b33;
+    }
+    form textarea { min-height: 90px; resize: vertical; }
+    .btn-form {
+      margin-top: 4px;
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+      font-size: 0.92rem;
